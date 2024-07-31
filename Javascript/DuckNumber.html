@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function duckNumber(input) {
+
+let i = 0, length = input.length;
+
+for (i; i < length && input[i] == '0'; i++) {
+    
+}
+
+for (i; i < length; i++) {
+    if (input[i] == '0') {
+        return true;
+    }
+}
+
+return false;
+}
+
+
+let num = "0123";
+
+if (duckNumber(num))
+console.log("It is a duck number");
+else
+console.log("It is not a duck number");
+    </script>
+</body>
+</html>

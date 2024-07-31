@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function isPrime(n)
+    {
+        
+        if (n <= 1)
+            return false;
+ 
+        
+        for (i = 2; i < n; i++)
+            if (n % i == 0)
+                return false;
+ 
+        return true;
+    }
+ 
+    
+    function isEmirp(n)
+    {
+        
+        if (isPrime(n) == false)
+            return false;
+ 
+        
+        var rev = 0;
+        while (n != 0) {
+            var d = n % 10;
+            rev = rev * 10 + d;
+            n = parseInt(n/10);
+        }
+ 
+        
+        return isPrime(rev);
+    }
+ 
+    
+        var n = 13; 
+        if (isEmirp(n) == true)
+            document.write("Yes,it is emarip number");
+        else
+            document.write("No , it is not a emarip number");
+    </script>
+</body>
+</html>

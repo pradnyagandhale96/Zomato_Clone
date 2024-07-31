@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo element</title>
+</head>
+<style>
+    p{
+        border: 5px solid;
+
+    }
+    p::first-letter{
+        text-transform: uppercase;
+        color: orangered;
+        font-size: 30px;
+    }
+    p::first-line{
+        color: blue;
+    }
+    p::before{
+        content: "Hello ";
+    }
+    p::after{
+        content: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzX9A_f_jDYExfolsAhVX7IgctPaA9qU0KUg&s );
+        display: inline-block;
+        width: 100px;
+        height: 30px;
+
+    }
+    p::selection{
+        background-color: black;
+        color: white;
+    }
+</style>
+<body>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet numquam velit magni quas, quia dolore, reprehenderit quae eaque voluptatum vel aspernatur. Doloremque repellendus ipsum harum, deserunt nulla optio sint qui.
+    </p>
+</body>
+</html>

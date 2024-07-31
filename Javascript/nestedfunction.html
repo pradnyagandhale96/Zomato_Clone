@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //nested function
+
+        // function display()
+        // {
+        //     function displayName()
+        //     {
+        //         function firstName()
+        //         {
+        //            console.log("first name: Shital");
+        //         }
+        //         firstName();
+        //         function lastName()
+        //         {
+        //             console.log("Last name : sharma");
+        //         }
+        //         lastName();
+        //     }
+        //     displayName();
+        // }
+        // display();
+
+            // function kadi(kari)
+        function product()
+        {
+            console.log(`product name : watch`);
+            return function prodPrice()
+            {
+                console.log(`Product price :12000`);
+            
+            return function prodBrand()
+            {
+                console.log(`product brand :versace`);
+            }
+        }
+    }
+        product()()();  /// fucnction are 3 so () are 3
+    </script> 
+</body>
+</html>

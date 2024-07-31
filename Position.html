@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmojiUsingPosition</title>
+</head>
+<style>
+    .body{
+        display: flex;
+        align-items: center;
+        justify-content: center;x
+    }
+    .outer-Circle{
+        height: 500px;
+        width: 400px;
+        background-color: yellow;
+        border-radius: 50%;
+}
+.eye-container{
+    height: 130px;
+    width: 90px;
+    border: 1px solid;
+    position: relative;
+    top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}   
+.eyes{
+    height: 130px;
+    width: 90px;
+    border: 1px solid;
+    border-radius: 50%;
+    position: absolute;
+    background-color: white;
+    } 
+.eyes left-eye{
+    left: 100px;
+
+}
+.eyes right-eye{
+    right: 100px;
+}
+.eyeball{
+    height: 50%;
+    width: 50%;
+    border: 1px solid;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+}
+
+</style>
+<body>
+    <div class="outer-Circle">
+    <div class="eye-container">
+    <div class="eyes left-eye">
+        <div class="eyeball"></div>
+     </div>
+    <div class="eyes right-eye">
+    <div class="eyeball"></div>
+</div>
+</div>
+</div>
+</body>
+</html>

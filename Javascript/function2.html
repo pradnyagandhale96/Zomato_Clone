@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <script>
+        //higher order function
+        // function calc(operate)
+        // {
+        //     operate();
+
+        // }
+        // function add()
+        // {
+        //     console.log(10+20);
+        // }
+        
+
+        // function sub()
+        // {
+        //     console.log(20-27);
+        // }
+        // function mup()
+        // {
+        //     console.log(20*27);
+        // }
+
+        // calc(add);
+        // calc(sub);
+        // calc(mup);
+
+        function example(operate,y,z)   //we can add here variables i.e c and d
+        {
+            operate(y,z);
+        }
+        example((y,z)=>console.log(y+z),20,30)
+        example((c,d)=>{
+        console.log(c-d)
+        },34,45)
+
+        
+    </script>
+</body>
+</html>

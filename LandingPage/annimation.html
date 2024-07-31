@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .animation
+        {
+            height: 300px;
+            width: 300px;
+            background-color: green;
+            margin: auto;
+            margin-top: 200px;
+            animation: anm1;
+            animation-delay: 3s;
+            animation-duration: 3s; /* 0% - 100% */
+            animation-timing-function: ease-in;
+            animation-iteration-count: 4;
+            animation-direction: reverse;
+        }
+
+        @keyframes anm1
+        {
+            0%,20%,30%,40%
+            {
+                background-color: red;
+                transform: scale(1.5);
+            }
+
+            50%,60%,70%
+            {
+                background-color: darkmagenta;
+                height: 500px;
+            }
+
+            /* 10%
+            {
+                transform: translate(0px,10px);
+            }
+
+            
+            20%
+            {
+                transform: translate(0px,-70px);
+            }
+
+            
+            50%
+            {
+                transform: translate(0px,10px);
+            } */
+
+            90%,100%
+            {
+                background-color: cornflowerblue;
+                transform: scale(0.5);
+            }
+
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="animation"></div>
+</body>
+</html>

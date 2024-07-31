@@ -1,0 +1,187 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+header{
+    height: 70px;
+    background: linear-gradient(to right,black,rgb(112,104,104),gray);
+    color: white;
+    box-shadow: 0px 5px 3px rgb(42,3,3);
+
+}
+header nav{
+    height: inherit;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: ;
+}
+header nav section{
+    height: inherit;
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#logo{
+    flex-basis: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+
+}
+#searchbar{
+    flex-basis: 50%;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+#search span{
+    height: 40px;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid white;
+
+}
+#search span input {
+    height: 30px;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+
+}
+
+#search span input::placeholder{
+    color: white;
+    font-size: 20px;
+
+}
+search span svg{
+    margin-right: 5px;
+}
+
+#menu{
+    flex-basis: 30%;
+}
+#menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+}
+#menu ul li a{
+    color: white;
+    text-decoration: none;/*remove underline */
+    font-size: 18px;
+}
+     
+
+ #menu ul li a:hover{
+    text-decoration: underline;
+    font-weight: 700;
+
+}
+#banner{
+    height: 550px;
+    width: 100%;
+    background-image: url(https://as2.ftcdn.net/v2/jpg/05/17/24/93/1000_F_517249329_IBSSVFUWevvvopi5xBRGl4j78TmnJxXV.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+.list{
+    position: absolute;
+    right: 10px;
+    top: 180px;
+    
+}
+.list ul{
+    list-style-type: none;
+}
+main{
+    height: 600px;
+    background: linear-gradient(grey);
+    display: flex;
+}
+main aside{
+    flex-basis: 20%;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+
+}
+main aside h1{
+     padding-top: 5px;
+     font-size: 22px;
+     width: 100%;
+     height: 40px;
+     text-align: center;
+     background: linear-gradient(to right,black,rgb(112,104,104),gray);
+     color:white;
+}
+main aside h3{
+    color: white;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+
+
+}
+main aside ul{
+    list-style-type: none;
+    font-size: 20px;
+    line-height: 1.5;
+
+}
+main section{
+    flex-basis: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+main section #container{
+    height: 550px;
+    width: 100%;
+    border: 1px solid;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+main section #container div{
+    margin-top:30px ;
+    height: 200px ;
+    width: 300px;
+    border: 1px double orange;
+    box-shadow: 0px 0px 20px grey;
+    
+}
+main section #container div img{
+    height: inherit;
+    width: inherit;
+
+
+}
+
+footer{
+    height: 70px;
+    background: linear-gradient(to right,black,rgb(112,104,104),gray);
+    color: white;
+}
